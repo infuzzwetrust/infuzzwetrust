@@ -27,13 +27,20 @@
 
   <body>
     <header class="jersey-10-regular">
-      <nav>
-        <ul>
-          {{ $title := lower .Title }}
-          {{ $section := lower .Section }}
-          <li class="pull-left {{ if .IsHome }}current{{ end }}">
-            <a href="{{ .Site.BaseURL }}">{{ lower .Site.Title}}</a>
-          </li>
+      <nav style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap;">
+
+        <!-- Logo + site title container -->
+        <div style="display: flex; align-items: center;">
+          <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExdHQ5bHJyczZ6cmozODMzNXR5c2Zndm05cTZydTI1Z3VmbGJpMDVrYSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/9GO5y3UT3upiW9gO2P/giphy.gif"
+              alt="logo" 
+              style="height: 1.5em; width: auto;">
+          <a href="{{ .Site.BaseURL }}" style="line-height: 1; font-size: 1.5em; color: #faf5d5; text-decoration: none;">
+            {{ lower .Site.Title }}
+          </a>
+        </div>
+
+        <!-- Main menu -->
+        <ul style="display: flex; align-items: center; list-style: none; margin: 0; padding: 0; gap: 1rem;">
           {{ range .Site.Menus.main }}
           <li class="{{ if .HasChildren }}dropdown{{ end }}">
             <a href="{{ .URL }}">{{ .Name }}</a>
@@ -48,13 +55,11 @@
           {{ end }}
 
           {{ range .Site.Menus.feed }}
-          {{ $name := lower .Name}}
-          <li class="pull-right">
+          <li>
             <a href="{{ .URL }}">~/{{ lower .Name}}</a>
           </li>
-          {{end}}
-
+          {{ end }}
         </ul>
+
       </nav>
     </header>
-
