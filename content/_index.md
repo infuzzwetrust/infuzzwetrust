@@ -29,4 +29,4 @@
 
 ---
 
-List of bloggies:
+Articles:
