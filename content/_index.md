@@ -5,7 +5,7 @@
     Welcome to InFuzzLand
   </h1>
   <h3 style="font-family: 'Atomic Age', sans-serif; font-style: italic; margin-top: 10px;">
-    Yet another space where cyber wisdom gets discovered and distributed.
+    Yet another space where cyber wisdom gets discovered, distilled and distributed.
   </h3>
 
 </div>
