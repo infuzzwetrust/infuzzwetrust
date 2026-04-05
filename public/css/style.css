@@ -16,22 +16,6 @@ body {
     background-color: #1c2021;
 }
 
-
-
-body.home {
-    background-color: #1da4c6;
-    color: #c1ab1b;
-}
-
-body.home h1 {
-    font-family: 'Roboto', sans-serif;
-    color: #426f59;
-}
-
-body.home .article-meta {
-    border-color: #426f59;
-}
-
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
     color: #faf5d5;
@@ -55,7 +39,7 @@ header a {
 header a:hover,
 header .current a {
     background-color: #ffffff07; /* slight transparent overlay */
-    color: #426f59;
+    color: #faf5d5;
 }
 
 /* Site title larger than menu */
@@ -93,7 +77,7 @@ header nav ul li a {
 header nav ul li a:hover,
 header nav ul li.current a {
     background-color: #ffffff11;  /* subtle overlay on hover/current */
-    color: #596e64;
+    color: #faf5d5;
 }
 
 /* Footer */
@@ -104,7 +88,7 @@ footer {
 }
 
 footer a {
-    color: #426f59;
+    color: #f6f5ee;
     text-decoration: none;
     transition: background-color 0.2s ease;
 }
@@ -135,8 +119,14 @@ footer a:hover {
 }
 
 /* Links throughout content */
-a, a:visited {
-    color: #426f59;
+a {
+    color: #faf5d5;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+}
+
+a:visited {
+    color: #faf5d5;
     text-decoration: none;
     transition: background-color 0.2s ease;
 }
