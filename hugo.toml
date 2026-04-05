@@ -1,0 +1,4 @@
+baseURL = "https://infuzzwetrust.github.io/"
+locale = "en-us"
+title = "InFuzzWeTrust"
+theme = "mana-theme"

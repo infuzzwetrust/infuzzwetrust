@@ -1,0 +1,20 @@
+# Hugo build output
+public/
+resources/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Node (some themes use it)
+node_modules/
+
+# Environment files
+.env
+.env.*
+
+# Hugo cache (optional)
+.hugo_build.lock
