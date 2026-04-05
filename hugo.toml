@@ -5,7 +5,7 @@ title = "InFuzzWeTrust"
 description = "A simple, minimal blog for those who love text."
 theme = "hugo-classic"
 relativeURLs = true
-canonifyURLs = false
+canonifyURLs = true
 enableEmoji = true
 
 # Cache settings
