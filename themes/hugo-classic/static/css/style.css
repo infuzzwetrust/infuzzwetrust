@@ -256,7 +256,6 @@ main a {
 
 .dropdown-menu li a:hover {
   background-color: #ffffff11;
-  width: 100%;
 }
 
 /* TOC position for larger screens */
@@ -280,4 +279,3 @@ main a {
         display: block;
     }
 }
-
