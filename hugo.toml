@@ -19,37 +19,44 @@ enableEmoji = true
   footer = "@infuzzwetrust | [Github](https://github.com/infuzzwetrust) | Built using [hugo-classic](https://github.com/goodroot/hugo-classic) theme."
 
 # Menu
-[menu]
+
+[[menu.main]]
+name = "Menu"       # Top-level dropdown
+url = "#"           # Not a real page
+weight = 1
+identifier = "main-dropdown"
 
   [[menu.main]]
-    identifier = "home"
-    name = "Home"
-    url = "/"
-    weight = 1
+  name = "Home"
+  url = "/"
+  weight = 1
+  parent = "main-dropdown"
 
   [[menu.main]]
-    identifier = "about"
-    name = "About"
-    url = "/about/"
-    weight = 2
+  name = "About"
+  url = "/about/"
+  weight = 2
+  parent = "main-dropdown"
 
   [[menu.main]]
-    identifier = "posts"
-    name = "Posts"
-    url = "/posts/"
-    weight = 3
+  name = "Posts"
+  url = "/posts/"
+  weight = 3
+  parent = "main-dropdown"
 
   [[menu.main]]
-    name = "Categories"
-    url = "/categories/"
-    weight = 4
+  name = "Categories"
+  url = "/categories/"
+  weight = 4
+  parent = "main-dropdown"
 
   [[menu.main]]
-    name = "Tags"
-    url = "/tags/"
-    weight = 5
+  name = "Tags"
+  url = "/tags/"
+  weight = 5
+  parent = "main-dropdown"
 
-  [[menu.feed]]
+[[menu.feed]]
     name = "Subscribe"
     url = "/index.xml"
 

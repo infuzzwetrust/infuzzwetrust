@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on InFuzzWeTrust</title>
-    <link>http://localhost:10126/infuzzwetrust/posts/</link>
+    <link>http://localhost:10495/infuzzwetrust/posts/</link>
     <description>Recent content in Posts on InFuzzWeTrust</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 05 Apr 2026 15:33:01 +0100</lastBuildDate>
-    <atom:link href="http://localhost:10126/infuzzwetrust/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:10495/infuzzwetrust/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Nothing to see here.</title>
-      <link>http://localhost:10126/infuzzwetrust/posts/testpost/</link>
+      <link>http://localhost:10495/infuzzwetrust/posts/testpost/</link>
       <pubDate>Sun, 05 Apr 2026 15:33:01 +0100</pubDate>
-      <guid>http://localhost:10126/infuzzwetrust/posts/testpost/</guid>
+      <guid>http://localhost:10495/infuzzwetrust/posts/testpost/</guid>
       <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;I haven&amp;rsquo;t yet wrote anything &lt;strong&gt;worth&lt;/strong&gt; of your attention, and this is &lt;em&gt;just some random&lt;/em&gt; text.&lt;/p&gt;&#xA;&lt;p&gt;Be well and visit &lt;a href=&#34;https://duckdukgo.com&#34;&gt;a browser engine&lt;/a&gt; if you&amp;rsquo;re lost!&lt;/p&gt;</description>
     </item>
   </channel>
