@@ -281,21 +281,3 @@ main a {
     }
 }
 
-@media screen and (max-width: 768px) {
-  .dropdown-menu {
-    position: static;      /* allow vertical flow */
-    width: 100%;           /* full width of parent container */
-    min-width: 0;          /* remove desktop min-width */
-    border: none;          /* optional clean look */
-  }
-
-  .dropdown-menu li a {
-    width: 100%;           /* stack links fully */
-    padding: 0.8em 1em;    /* optional larger padding for touch */
-  }
-
-  /* Optional: adjust hover for mobile (tap) */
-  .dropdown-menu li a:hover {
-    background-color: #ffffff11;
-  }
-}
