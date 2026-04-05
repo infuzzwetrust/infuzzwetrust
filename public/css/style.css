@@ -152,6 +152,18 @@ header .current a {
     color: #fff
 }
 
+header.jersey-10-regular {
+    font-size: 1.5rem; /* adjust as needed */
+    line-height: 2rem; /* optional, for spacing */
+}
+
+/* Site title larger than menu */
+header.jersey-10-regular li.pull-left:first-child a {
+    font-size: 3rem;       /* very prominent site title */
+    font-weight: 200;      /* optional: bold */
+    line-height: 1.0rem;
+}
+
 /* Code Boxes */
 pre {
   border: 2px solid #EBC3DB;
