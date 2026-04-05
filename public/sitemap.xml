@@ -2,19 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:9261/</loc>
+    <loc>https://infuzzwetrust.github.io/infuzzwetrust/</loc>
     <lastmod>2026-04-05T15:33:01+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:9261/posts/testpost/</loc>
+    <loc>https://infuzzwetrust.github.io/infuzzwetrust/posts/testpost/</loc>
     <lastmod>2026-04-05T15:33:01+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:9261/posts/</loc>
+    <loc>https://infuzzwetrust.github.io/infuzzwetrust/posts/</loc>
     <lastmod>2026-04-05T15:33:01+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:9261/about/</loc>
+    <loc>https://infuzzwetrust.github.io/infuzzwetrust/about/</loc>
   </url><url>
-    <loc>http://localhost:9261/categories/</loc>
+    <loc>https://infuzzwetrust.github.io/infuzzwetrust/categories/</loc>
   </url><url>
-    <loc>http://localhost:9261/tags/</loc>
+    <loc>https://infuzzwetrust.github.io/infuzzwetrust/tags/</loc>
   </url>
 </urlset>
