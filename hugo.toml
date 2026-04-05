@@ -1,5 +1,5 @@
 # Site Settings
-baseURL = "https://infuzzwetrust.github.io/"
+baseURL = "https://infuzzwetrust.github.io/infuzzwetrust"
 languageCode = "en-us"
 title = "InFuzzWeTrust"
 description = "A simple, minimal blog for those who love text."
