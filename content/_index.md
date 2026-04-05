@@ -1,4 +1,4 @@
-<h1 style="font-family: 'Sixtyfour Convergence', sans-serif; color:#426f59;">Welcome to InFuzzLand</h1>
+<h1 style="font-family: 'Sixtyfour Convergence', sans-serif; color: #426f59;">Welcome to InFuzzLand</h1>
 
 <h3 style="font-family: 'Atomic Age', sans-serif; font-style: italic;">Yet another space where cyber things are discovered and shared.
 </h3>

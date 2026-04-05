@@ -8,8 +8,12 @@ body {
 }
 
 /* Links and pink elements */
-a, a:visited {
+a {
     color: #426f59;
+}
+
+a:visited {
+    color: #faf5d5;
 }
 
 /* Header links (menu) */
