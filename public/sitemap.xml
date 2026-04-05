@@ -2,12 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:7934/infuzzwetrust/categories/</loc>
+    <loc>http://localhost:8516/</loc>
+    <lastmod>2026-04-05T15:33:01+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:7934/infuzzwetrust/</loc>
+    <loc>http://localhost:8516/posts/testpost/</loc>
+    <lastmod>2026-04-05T15:33:01+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:7934/infuzzwetrust/posts/</loc>
+    <loc>http://localhost:8516/posts/</loc>
+    <lastmod>2026-04-05T15:33:01+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:7934/infuzzwetrust/tags/</loc>
+    <loc>http://localhost:8516/about/</loc>
+  </url><url>
+    <loc>http://localhost:8516/categories/</loc>
+  </url><url>
+    <loc>http://localhost:8516/tags/</loc>
   </url>
 </urlset>

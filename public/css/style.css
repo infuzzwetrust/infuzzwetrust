@@ -1,251 +1,250 @@
-/* Dark mode */
-@media (prefers-color-scheme: dark) {
-    body {
-        background-color: #393E41;
-        color: white;
-    }
+/* ========================================
+   Hugo Classic Theme – Custom Color Palette
+   Main font: #faf5d5
+   Background: #1c2021
+   Accent / divider: #426f59
+   Hover overlay: #ffffff22 (subtle transparent)
+   ======================================== */
 
-    blockquote {
-      background: #393E41;
-    }
-
-    a {
-      color: #EBC3DB;
-    }
-
-    header {
-      background: #393E41;
-      border-bottom: 2px dotted #EBC3DB;
-
-    }
-
-    .article-meta, .menu a {
-      background: #393E41;
-      color: white;
-    }
-
-    table {
-      margin: auto;
-      border-top: 1px solid #666;
-      border-bottom: 1px solid #666;
-    }
-    table thead th { border-bottom: 1px solid #666; }
-    th, td { padding: 5px; }
-    tr:nth-child(even) { background: #666 }
-
-}
-
-
-/* Light mode */
-@media (prefers-color-scheme: light) {
-    blockquote {
-      background: #f9f9f9;
-    }
-
-    a {
-      color: #613DC1;
-    }
-
-    header {
-      background: #613DC1;
-    }
-
-    .article-meta, .menu a {
-      background: #E8DBC5;
-      color: #000;
-    }
-
-    table {
-      margin: auto;
-      border-top: 1px solid #666;
-      border-bottom: 1px solid #666;
-    }
-    table thead th { border-bottom: 1px solid #ddd; }
-    th, td { padding: 5px; }
-    tr:nth-child(even) { background: #eee }
-
-}
-
-
+/* Base body */
 body {
-  max-width: 800px;
-  margin: auto;
-  padding: .2em;
-  line-height: 1.5em;
+    max-width: 800px;
+    margin: auto;
+    padding: 0.2em;
+    line-height: 1.5em;
+    color: #faf5d5;
+    background-color: #1c2021;
 }
 
-h1 {
-  line-height: 1.5em;
+
+
+body.home {
+    background-color: #1da4c6;
+    color: #c1ab1b;
 }
 
-/* Table of Contents, if wanted
-
-Add to yaml:
-
-output:
-  blogdown::html_page:
-    toc: true
-
-    */
-
-#TableOfContents, #TOC {
-  border: 1px solid #eee;
-  border-radius: 5px;
+body.home h1 {
+    font-family: 'Roboto', sans-serif;
+    color: #426f59;
 }
 
-/* Header and Footer */
-.menu li { display: inline-block; }
-.article-meta, .menu a {
-  text-decoration: none;
-  padding: 5px;
-  border-radius: 5px;
-  border-style: dotted;
-  border-width: 1px;
-  margin: 20px 0px 20px 0px;
+body.home .article-meta {
+    border-color: #426f59;
 }
 
-.terms { font-size: .9em; }
-.menu, .article-meta, footer { text-align: center; }
-.title { font-size: 1.1em; }
-footer a { text-decoration: none; }
-
-.pull-left {
-    float: left
-}
-.pull-right {
-    float: right
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    color: #faf5d5;
 }
 
-a {
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-/* Adjust background at your leisure! */
+/* Header and menu */
 header {
-    position: relative;
-    width: 100%;
-    height: 1.75rem;
-    font-size: 1rem;
-}
-
-header ul,
-header ol {
-    margin: 0;
-    padding: 0;
-    list-style: none
-}
-header nav {
-    padding: 0 0.5rem
+    background: #1c2021;
+    border-bottom: 2px dotted #426f59;
 }
 
 header a {
-    color: #fff;
+    color: #faf5d5;
     line-height: 1.75rem;
-    padding: 0 0.5rem
-}
-header a:hover,
-header .current a {
-    color: #fff
+    padding: 0 0.5rem;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
 }
 
-header.jersey-10-regular {
-    font-size: 1.5rem; /* adjust as needed */
-    line-height: 2rem; /* optional, for spacing */
+/* Hover: subtle silver overlay */
+header a:hover,
+header .current a {
+    background-color: #ffffff07; /* slight transparent overlay */
+    color: #426f59;
 }
 
 /* Site title larger than menu */
 header.jersey-10-regular li.pull-left:first-child a {
-    font-size: 3rem;       /* very prominent site title */
-    font-weight: 200;      /* optional: bold */
-    line-height: 1.0rem;
+    font-size: 2rem;
+    font-weight: 200;
+    line-height: 1rem;
 }
 
-/* Code Boxes */
+/* Remove bullets and display menu items inline */
+header nav ul {
+    list-style: none;   /* remove bullets */
+    margin: 0;          /* reset default margin */
+    padding: 0;         /* reset default padding */
+}
+
+header nav ul li {
+    display: inline-block;  /* show items horizontally */
+    margin-right: 1rem;     /* space between items */
+    float: none;            /* reset any float from previous overrides */
+}
+
+header nav ul li.pull-left:first-child {
+    margin-right: 2rem;     /* extra space for site title */
+}
+
+header nav ul li a {
+    text-decoration: none;
+    padding: 0 0.5rem;
+    line-height: 1.75rem;
+    color: #faf5d5;
+    transition: background-color 0.2s ease;
+}
+
+header nav ul li a:hover,
+header nav ul li.current a {
+    background-color: #ffffff11;  /* subtle overlay on hover/current */
+    color: #596e64;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    color: #faf5d5;
+    font-size: 0.6em;
+}
+
+footer a {
+    color: #426f59;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+}
+
+footer a:hover {
+    background-color: #ffffff11; /* subtle overlay */
+}
+
+/* Menu and article-meta blocks */
+.menu li, .article-meta {
+    display: inline-block;
+    padding: 5px;
+    margin: 20px 0;
+    border-radius: 5px;
+    border: 1px dotted #426f59;
+    background-color: #1c2021;
+    color: #faf5d5;
+    transition: background-color 0.2s ease;
+}
+
+.menu li a, .article-meta a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.menu li a:hover, .article-meta a:hover {
+    background-color: #ffffff11; /* subtle overlay */
+}
+
+/* Links throughout content */
+a, a:visited {
+    color: #426f59;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+}
+
+a:hover {
+    background-color: #ffffff11; /* subtle overlay */
+}
+
+/* Divider */
+hr {
+    border-color: #426f59;
+}
+
+/* Code blocks and inline code */
 pre {
-  border: 2px solid #EBC3DB;
-  padding: 1em;
-  overflow-x: auto;
+    border: 2px solid #426f59;
+    padding: 1em;
+    overflow-x: auto;
+    background-color: #1c2021;
 }
-pre code { background: none; }
 
+pre code,
 code {
-  background-color: light-dark(#D6D6D6, #888);
-  border-radius: 3px;
-  padding: 0.2em;
-  overflow-x: auto;
+    background-color: #1c2021;
+    color: #faf5d5;
+    border-radius: 3px;
+    padding: 0.2em;
 }
 
-/* Images, tables, misc. */
-img, iframe, video {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-main {
-  hyphens: auto;
-  max-width: 650px;
-  margin-left: auto;
-  margin-right: auto;
-  line-height: 1.7em;
-  hyphens: auto;
-  display: block;
-  font-size: 1.1em;
-}
-main a {
-  font-weight: bold;
-}
-
+/* Blockquotes */
 blockquote {
-
-  border-left: 5px solid #ccc;
-  padding: 3px 1em 3px;
+    background: #1c2021;
+    border-left: 5px solid #426f59;
+    padding: 3px 1em;
 }
 
-.content-wrapper {
-  padding: 0px 12px 0px 12px;
-}
-#foxy {
-  min-width: 40px;
-  float: right;
-  padding: 10px;
-  display: block;
+/* Tables */
+table {
+    margin: auto;
+    border-top: 1px solid #426f59;
+    border-bottom: 1px solid #426f59;
+    border-collapse: collapse;
 }
 
-
-#table-of-contents {
+table thead th {
+    border-bottom: 1px solid #426f59;
 }
 
-/* Small devices, phones */
-@media only screen and (min-width : 480px) {
-  #foxy {
-    min-width: 40px;
-    float: center;
-    padding: 10px 10px 10px 20px;
+th, td {
+    padding: 5px;
+}
+
+tr:nth-child(even) {
+    background-color: #426f5933; /* subtle row shading */
+}
+
+/* Images, videos, iframes */
+img, iframe, video {
+    max-width: 100%;
+    height: auto;
     display: block;
-  }
-
+    margin-left: auto;
+    margin-right: auto;
 }
 
-/* 在大屏幕上应用特定样式 */
+/* Main content wrapper */
+main {
+    hyphens: auto;
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.7em;
+    font-size: 1.1em;
+}
+
+main a {
+    font-weight: bold;
+}
+
+/* Table of Contents */
+#table-of-contents {
+    border: 1px solid #426f59;
+    border-radius: 5px;
+    padding: 10px;
+    max-height: 70vh;
+    overflow-y: auto;
+    background-color: #1c2021;
+    color: #faf5d5;
+}
+
+/* TOC position for larger screens */
 @media screen and (min-width: 768px) {
     #table-of-contents {
-        position: fixed; /* 固定定位，使其悬浮在页面上 */
-        top: 50%; /* 上边距为50% */
-        right: 15px; /* 右边距为0，将其放在右侧 */
-        transform: translateY(-50%); /* 使用transform来垂直居中 */
-        background-color: #f0f0f0; /* 设置背景颜色 */
-        padding: 10px; /* 添加一些内边距以增加可读性 */
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* 添加阴影效果 */
-        width: 250px; /* 设置宽度 */
-        max-height: 70vh; /* 设置最大高度为视口的70% */
-        overflow-y: auto; /* 添加垂直滚动条 */
+        position: fixed;
+        top: 50%;
+        right: 15px;
+        transform: translateY(-50%);
+        box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+        width: 250px;
     }
 }
 
+/* Small devices */
+@media only screen and (min-width : 480px) {
+    #foxy {
+        min-width: 40px;
+        float: center;
+        padding: 10px 10px 10px 20px;
+        display: block;
+    }
+}

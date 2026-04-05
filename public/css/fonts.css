@@ -1,6 +1,10 @@
 /* fonts.css */
 @import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap'); /* new font */
 @import url('https://rsms.me/inter/inter.css');
+@import url('https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Atomic+Age&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap');
+
 html { font-family:
         'Jersey 10',
         sans-serif,
@@ -10,7 +14,7 @@ html { font-family:
       }
 @supports (font-variation-settings: normal) {
   html { font-family:
-          'Inter var',
+          'Atomic Age',
           sans-serif,
           'Apple Color Emoji',
           'Segoe UI Emoji',
@@ -35,6 +39,12 @@ code {
 /* Header font (Jersey 10) */
 .jersey-10-regular {
   font-family: 'Jersey 10', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.atomic-age-regular {
+  font-family: 'Atomic Age', sans-serif;
   font-weight: 400;
   font-style: normal;
 }

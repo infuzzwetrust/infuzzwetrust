@@ -1,15 +1,82 @@
-baseURL = "https://infuzzwetrust.github.io/infuzzwetrust"
-locale = "en-us"
+# Site Settings
+baseURL = "https://infuzzwetrust.github.io/"
+languageCode = "en-us"
 title = "InFuzzWeTrust"
+description = "A simple, minimal blog for those who love text."
 theme = "hugo-classic"
-
 relativeURLs = true
 canonifyURLs = false
+enableEmoji = true
 
+# Cache settings
 [caches]
   [caches.images]
-    dir = ':cacheDir/images'
+    dir = ":cacheDir/images"
 
-# Fonts
+# Custom parameters
 [params]
-  customCSS = ["css/custom-fonts.css"]
+  customCSS = ["css/custom-fonts.css", "css/theme-override.css"]
+  footer = "@infuzzwetrust | [Github](https://github.com/infuzzwetrust) | Built using [hugo-classic](https://github.com/goodroot/hugo-classic) theme."
+
+# Menu
+[menu]
+
+  [[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 1
+
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 2
+
+  [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts/"
+    weight = 3
+
+  [[menu.main]]
+    name = "Categories"
+    url = "/categories/"
+    weight = 4
+
+  [[menu.main]]
+    name = "Tags"
+    url = "/tags/"
+    weight = 5
+
+  [[menu.feed]]
+    name = "Subscribe"
+    url = "/index.xml"
+
+# Markdown / Goldmark settings
+[markup.goldmark.renderer]
+    unsafe = true
+
+[markup.highlight]
+    anchorLineNos = false
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = ""
+    lineAnchors = ""
+    lineNoStart = 1
+    lineNos = false
+    lineNumbersInTable = true
+    noClasses = true
+    style = "monokai"
+    tabWidth = 4
+
+# Permalinks
+[permalinks]
+    post = "/post/:year/:month/:day/:slug/"
+
+# Ignore unnecessary files
+# ignoreFiles = ["\\.Rmd$", "_files$", "_cache$"]
+
+# Google Analytics (empty for now)
+googleAnalytics = ""
+footnotereturnlinkcontents = " ↩"

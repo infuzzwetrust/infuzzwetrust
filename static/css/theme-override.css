@@ -1,0 +1,43 @@
+footer { font-size: 90%; }
+/* theme-override.css */
+
+/* Body background and main font */
+body {
+    background-color: #1c2021;
+    color: #faf5d5;
+}
+
+/* Links and pink elements */
+a, a:visited {
+    color: #426f59;
+}
+
+/* Header links (menu) */
+header nav ul li a {
+    color: #faf5d5; /* main font for menu */
+}
+
+/* Highlight current menu item */
+header nav ul li.current a {
+    color: #426f59; /* your accent color */
+}
+
+/* Divider line */
+hr {
+    border-color: #426f59;
+}
+
+/* Post titles */
+h1, h2, h3, h4, h5, h6 {
+    color: #faf5d5;
+}
+
+/* Footer links */
+footer a {
+    color: #426f59;
+}
+
+/* Optional: hovered links */
+a:hover, header nav ul li a:hover, footer a:hover {
+    color: #faf5d5;
+}
