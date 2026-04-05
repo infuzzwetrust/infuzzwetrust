@@ -1,7 +1,7 @@
 baseURL = "https://infuzzwetrust.github.io/"
 locale = "en-us"
 title = "InFuzzWeTrust"
-theme = "mana-theme"
+theme = "hugo-classic"
 
 [caches]
   [caches.images]
