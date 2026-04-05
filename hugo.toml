@@ -32,11 +32,11 @@ identifier = "main-dropdown"
   weight = 1
   parent = "main-dropdown"
 
-  [[menu.main]]
-  name = "About"
-  url = "/about/"
-  weight = 2
-  parent = "main-dropdown"
+#  [[menu.main]]
+#  name = "About"
+#  url = "/about/"
+#  weight = 2
+#  parent = "main-dropdown"
 
   [[menu.main]]
   name = "Posts"
@@ -50,11 +50,11 @@ identifier = "main-dropdown"
   weight = 4
   parent = "main-dropdown"
 
-  [[menu.main]]
-  name = "Tags"
-  url = "/tags/"
-  weight = 5
-  parent = "main-dropdown"
+#  [[menu.main]]
+#  name = "Tags"
+#  url = "/tags/"
+#  weight = 5
+#  parent = "main-dropdown"
 
 [[menu.feed]]
     name = "Subscribe"
