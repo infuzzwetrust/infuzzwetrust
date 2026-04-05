@@ -3,6 +3,13 @@ locale = "en-us"
 title = "InFuzzWeTrust"
 theme = "hugo-classic"
 
+relativeURLs = true
+canonifyURLs = false
+
 [caches]
   [caches.images]
     dir = ':cacheDir/images'
+
+# Fonts
+[params]
+  customCSS = ["css/custom-fonts.css"]
